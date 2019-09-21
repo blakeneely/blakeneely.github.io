@@ -1,0 +1,13 @@
+* {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100 !important;
+}
+body {
+    background: black;
+}
+.splash-page {
+    background: black;
+}
+.hero .container {
+    max-width: 500px;
+}
