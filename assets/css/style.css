@@ -37,3 +37,19 @@ body {
     background: white;
     padding: 1em 1em 0 1em;
 }
+.head-shot a {
+    color: hsl(0, 0%, 29%);
+}
+.head-shot a:hover {
+    color: hsl(204, 86%, 53%);
+}
+.projects {
+    margin-top: 2em;
+    max-width: 1000px;
+}
+.project-text {
+    margin-bottom: 10px;
+}
+.git-icon {
+    margin-right: 10px;
+}
