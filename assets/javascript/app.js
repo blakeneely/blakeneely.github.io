@@ -23,6 +23,9 @@ $(document).ready(function() {
     function showCrystalModal(){
         $(".crystal-modal").toggleClass("is-active");
     }
+    function showResume(){
+        $(".resume-modal").toggleClass("is-active");
+    }
     // Modal Event Listeners
     $("#giftastic-image").on("click", showGiftasticModal);
     $(".giftastic-delete").on("click", showGiftasticModal);
@@ -39,6 +42,9 @@ $(document).ready(function() {
 
     $(".contact").on("click", showContactModal);
     $(".contact-delete").on("click", showContactModal);
+
+    $(".resume").on("click", showResume);
+    $(".resume-delete").on("click", showResume);
 
     // Navbar Event Listener
     $(".navbar-burger").click(function() {
