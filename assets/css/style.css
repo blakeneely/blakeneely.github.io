@@ -66,12 +66,19 @@ body {
 .project-text {
     margin-bottom: 10px;
 }
+.project-image {
+    cursor: pointer;
+}
 .git-icon {
     margin-right: 10px;
 }
 .tech-list {
-    margin-left: 30px;
+    margin-left: 35px;
 }
 .code-button {
     margin: 10px;
+}
+.footer {
+    margin-top: 100px;
+    padding: 2em;
 }
