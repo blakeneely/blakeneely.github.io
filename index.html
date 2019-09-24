@@ -41,7 +41,7 @@
                 <a href="index.html" class="navbar-item has-text-grey-dark has-text-weight-bold">
                     About me
                 </a>
-                <a href="contact.html" class="navbar-item has-text-grey-dary has-text-weight-bold">
+                <a class="navbar-item has-text-grey-dary has-text-weight-bold contact">
                     Contact
                 </a>
                 </div>
@@ -184,7 +184,7 @@
                 <hr>
                 <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
                     <div class="column">
-                        <figure class="image project-image is-1x1">
+                        <figure class="image project-image is-1x1 container">
                             <img src="assets/images/crystal-group.png" alt="crystal collector">
                         </figure>
                     </div>
@@ -215,6 +215,51 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <div class="modal contact-modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Contact Me</p>
+                        <button class="delete contact-delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                    <!-- Content ... -->
+                    <div class="contact-container container">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input is-medium is-rounded" type="text" placeholder="Name" id="name-input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-medium is-rounded" type="email" placeholder="example@example.com" id="email-input">
+                                <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" id="message-input"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <div class="field">
+                            <div class="control">
+                                <a class="hero-button button is-info is-rounded" id="contact-submit">
+                                    Submit
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                </div>        
         </section>
         <footer class="footer">
             <div class="content has-text-centered">

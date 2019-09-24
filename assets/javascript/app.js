@@ -5,9 +5,18 @@ $(document).ready(function() {
     };
     function showBody(){
         $(".body").toggleClass("hidden");
-        $(".body").addClass("animated zoomIn slow");
+        $(".body").addClass("animated zoomIn");
         setTimeout(function(){$(".body").show();}, 500)
     };
+    function showContactModal(){
+        $(".contact-modal").toggleClass("is-active")
+    }
+    $(".contact").on("click", function(){
+        // event.preventDefault;
+        showContactModal();
+    });
+    $(".contact-delete").on("click", showContactModal);
+    
     $(".navbar-burger").click(function() {
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
