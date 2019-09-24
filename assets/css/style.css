@@ -47,9 +47,28 @@ body {
     margin-top: 2em;
     max-width: 1000px;
 }
+.reverse-row-order {
+    flex-direction: row-reverse;
+  }
+.project-title {
+    margin: 1em;
+}
+.project-boxes {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.project-description-column {
+    padding: 2em;
+}
 .project-text {
     margin-bottom: 10px;
 }
 .git-icon {
     margin-right: 10px;
+}
+.tech-list {
+    margin-left: 30px;
+}
+.code-button {
+    margin: 10px;
 }
