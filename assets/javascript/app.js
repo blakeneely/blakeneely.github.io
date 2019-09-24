@@ -4,7 +4,8 @@ $(document).ready(function() {
         setTimeout(function(){$("#hero").hide();}, 500);
     };
     function showBody(){
-        $(".body").addClass("animated zoomIn");
+        $(".body").toggleClass("hidden");
+        $(".body").addClass("animated zoomIn slow");
         setTimeout(function(){$(".body").show();}, 500)
     };
     $(".navbar-burger").click(function() {
