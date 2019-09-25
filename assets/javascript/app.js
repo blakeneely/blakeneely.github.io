@@ -1,4 +1,41 @@
 $(document).ready(function() {
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyCxUCsWBLNy_0bQiExP7IljhAfl8621h7s",
+        authDomain: "portfolio-6f94d.firebaseapp.com",
+        databaseURL: "https://portfolio-6f94d.firebaseio.com",
+        projectId: "portfolio-6f94d",
+        storageBucket: "",
+        messagingSenderId: "727966976436",
+        appId: "1:727966976436:web:360c02fe7738df68e84ae1",
+        measurementId: "G-52VR5LN7XG"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        var database = firebase.database();
+
+    function saveContact(){
+        event.preventDefault();
+        var name = $('#name-input').val().trim();
+        var email = $('#email-input').val().trim();
+        var message = $('#message-input').val().trim();
+        if ($('#name-input').val() === "" || $('#email-input').val() === "" || $('#message-input').val() === "") {
+            return false;
+        }
+        else {
+            var newContact = {
+            name: name,
+            email: email,
+            message: message,
+            };
+            database.ref().push(newContact);
+        };
+        $('#name-input').val("");
+        $('#email-input').val("");
+        $('#message-input').val("");
+        };
+
     function hideSplash(){
         $("#hero").addClass("animated zoomOut");
         setTimeout(function(){$("#hero").hide();}, 500);
@@ -32,6 +69,9 @@ $(document).ready(function() {
         $(".resume-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     }
+    // Contact Form Event Listener 
+    $(document).on('click', '#contact-submit', saveContact);
+
     // Modal Event Listeners
     $("#giftastic-image").on("click", showGiftasticModal);
     $(".giftastic-delete").on("click", showGiftasticModal);
