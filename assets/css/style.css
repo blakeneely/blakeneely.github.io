@@ -79,6 +79,11 @@ body {
 .code-button {
     margin: 10px;
 }
+/* .modal-content, .modal-card {
+    position: fixed;
+    top: 0;
+
+} */
 .modal-image {
     height: 640px;
     width: 1280px;

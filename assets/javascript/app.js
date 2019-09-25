@@ -9,22 +9,28 @@ $(document).ready(function() {
         setTimeout(function(){$(".body").show();}, 500)
     };
     function showContactModal(){
-        $(".contact-modal").toggleClass("is-active")
+        $(".contact-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     };
     function showHuddleModal(){
         $(".huddle-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     }
     function showGiftasticModal(){
         $(".giftastic-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     }
     function showTrainModal(){
         $(".train-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     }
     function showCrystalModal(){
         $(".crystal-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     }
     function showResume(){
         $(".resume-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
     }
     // Modal Event Listeners
     $("#giftastic-image").on("click", showGiftasticModal);

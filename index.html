@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,94 @@
 </head>
 
 <body>
+    <!-- ******* Hidden Modals ******* -->
+    <div class="modal image-modal huddle-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/huddle-group.png" alt="huddle">
+            </p>
+        </div>
+        <button class="modal-close is-large huddle-delete" aria-label="close"></button>
+    </div>
+    <div class="modal resume-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <iframe src="assets/images/BlakeNeely-resume.pdf" style="width:640px; height:800px;" frameborder="0"></iframe>
+        </div>
+        <button class="modal-close is-large resume-delete" aria-label="close"></button>
+    </div> 
+    <div class="modal image-modal giftastic-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/giftastic-group.png" alt="giftastic">
+            </p>
+        </div>
+        <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
+    </div>
+    <div class="modal image-modal train-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/train-group.png" alt="train scheduler">
+            </p>
+        </div>
+        <button class="modal-close is-large train-delete" aria-label="close"></button>
+    </div>
+    <div class="modal image-modal crystal-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/crystal-group.png" alt="crystal collector">
+            </p>
+        </div>
+        <button class="modal-close is-large crystal-delete" aria-label="close"></button>
+    </div>
+    <div class="modal contact-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Contact Me</p>
+                <button class="delete contact-delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="contact-container container">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input is-medium is-rounded" type="text" placeholder="Name" id="name-input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium is-rounded" type="email" placeholder="example@example.com" id="email-input">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" id="message-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="field">
+                    <div class="control">
+                        <a class="hero-button button is-info is-rounded" id="contact-submit">
+                            Submit
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        </div>
+    <!-- ***** Hero Splash Page ***** -->
     <section class="hero is-fullheight splash-page" id="hero">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -20,6 +108,8 @@
             </div>
         </div>
     </section>
+    <!-- ***** New Body Start ***** -->
+    <!-- ***** Navbar ***** -->
     <section class="body has-text-grey-dark hidden">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -47,6 +137,7 @@
                 </div>
             </div>
         </nav>
+        <!-- ***** Banner ***** -->
         <section>
             <div class="banner has-text-grey-dark has-text-centered">
                 <div class="card head-shot">
@@ -72,9 +163,11 @@
                 </div>
             </div>
         </section>
+        <!-- ***** Projects Container ***** -->
         <section>
             <div class="container projects has-text-info">
                 <h2 class="is-size-5 project-title">Recent Projects:</h2>
+                <!-- ***** Project 1 ***** -->
                 <div class="columns project-boxes has-text-centered is-vcentered">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="huddle-image">
@@ -111,6 +204,7 @@
                     </div>
                 </div>
                 <hr>
+                <!-- ***** Project 2 ***** -->
                 <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="giftastic-image">
@@ -146,6 +240,7 @@
                     </div>
                 </div>
                 <hr>
+                <!-- ***** Project 3 ***** -->
                 <div class="columns project-boxes is-vcentered has-text-centered">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="train-image">
@@ -182,6 +277,7 @@
                     </div>
                 </div>
                 <hr>
+                <!-- ***** Project 4 ***** -->
                 <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
                     <div class="column">
                         <figure class="image project-image is-1x1 container" id="crystal-image">
@@ -216,98 +312,7 @@
                 </div>
             </div>
         </section>
-        <section class="modals">
-            <div class="modal contact-modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Contact Me</p>
-                        <button class="delete contact-delete" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <div class="contact-container container">
-                            <div class="field">
-                                <label class="label">Name</label>
-                                <div class="control">
-                                    <input class="input is-medium is-rounded" type="text" placeholder="Name" id="name-input">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Email</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-medium is-rounded" type="email" placeholder="example@example.com" id="email-input">
-                                    <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Message</label>
-                                <div class="control">
-                                    <textarea class="textarea" id="message-input"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <div class="field">
-                            <div class="control">
-                                <a class="hero-button button is-info is-rounded" id="contact-submit">
-                                    Submit
-                                </a>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-                </div>
-                <div class="modal image-modal huddle-modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <p class="image box is-2by1 has-background-white">
-                            <img src="assets/images/huddle-group.png" alt="huddle">
-                        </p>
-                    </div>
-                    <button class="modal-close is-large huddle-delete" aria-label="close"></button>
-                </div>
-                <div class="modal image-modal giftastic-modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <p class="image box is-2by1 has-background-white">
-                            <img src="assets/images/giftastic-group.png" alt="giftastic">
-                        </p>
-                    </div>
-                    <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
-                </div>
-                <div class="modal image-modal train-modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <p class="image box is-2by1 has-background-white">
-                            <img src="assets/images/train-group.png" alt="train scheduler">
-                        </p>
-                    </div>
-                    <button class="modal-close is-large train-delete" aria-label="close"></button>
-                </div>
-                <div class="modal image-modal crystal-modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <p class="image box is-2by1 has-background-white">
-                            <img src="assets/images/crystal-group.png" alt="crystal collector">
-                        </p>
-                    </div>
-                    <button class="modal-close is-large crystal-delete" aria-label="close"></button>
-                </div>
-                <div class="modal resume-modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <iframe src="assets/images/BlakeNeely-resume.pdf" style="width:640px; height:800px;" frameborder="0"></iframe>
-                    </div>
-                    <button class="modal-close is-large resume-delete" aria-label="close"></button>
-                </div> 
-     
-     
-     
-     
-        </section>
+        <!-- ***** Footer ***** -->
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
