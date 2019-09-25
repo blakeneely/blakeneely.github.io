@@ -30,6 +30,7 @@ $(document).ready(function() {
             message: message,
             };
             database.ref().push(newContact);
+            $(".thanks-modal").toggleClass("is-active");
         };
         $('#name-input').val("");
         $('#email-input').val("");
@@ -70,7 +71,13 @@ $(document).ready(function() {
         $(".html").toggleClass("is-clipped");
     }
     // Contact Form Event Listener 
-    $(document).on('click', '#contact-submit', saveContact);
+    $(document).on('click', '#contact-submit', function(){
+        saveContact();
+        showContactModal();
+    });
+    $(document).on("click", ".thanks-delete", function(){
+        $(".thanks-modal").toggleClass("is-active");
+    })
 
     // Modal Event Listeners
     $("#giftastic-image").on("click", showGiftasticModal);
@@ -103,7 +110,5 @@ $(document).ready(function() {
         hideSplash();
         showBody();
     });
-
-    
 
 });

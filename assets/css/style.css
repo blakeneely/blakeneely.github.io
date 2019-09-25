@@ -21,7 +21,7 @@ body {
     background: white;
 }
 .hero .container {
-    max-width: 500px;
+    max-width: 450px;
 }
 .banner {
     height: 100%;
@@ -79,16 +79,17 @@ body {
 .code-button {
     margin: 10px;
 }
-/* .modal-content, .modal-card {
-    position: fixed;
-    top: 0;
-
-} */
 .modal-image {
     height: 640px;
     width: 1280px;
 }
+.thanks-box {
+    padding: 50px;
+}
 .footer {
     margin-top: 100px;
     padding: 2em;
+}
+.is-huge {
+    max-width: 1000px !important;
 }

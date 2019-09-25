@@ -7,15 +7,27 @@
     <title>Blake Neely</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link  rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />   
+    <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
     <!-- ******* Hidden Modals ******* -->
-    <div class="modal image-modal huddle-modal">
+    <div class="modal thanks-modal has-text-centered">
         <div class="modal-background"></div>
         <div class="modal-content">
+            <!-- Any other Bulma elements you want -->
+            <p class="box thanks-box is-size-5">
+                Thank you for leaving me a message!
+            </p>
+        </div>
+            <button class="modal-close is-large thanks-delete" aria-label="close"></button>
+        </div>
+    <div class="modal image-modal huddle-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
             <p class="image box is-2by1 has-background-white">
                 <img src="assets/images/huddle-group.png" alt="huddle">
             </p>
@@ -29,27 +41,27 @@
         </div>
         <button class="modal-close is-large resume-delete" aria-label="close"></button>
     </div> 
-    <div class="modal image-modal giftastic-modal">
+    <div class="modal image-modal giftastic-modal modal-fx-superScaled">
         <div class="modal-background"></div>
-        <div class="modal-content">
+        <div class="modal-content is-huge">
             <p class="image box is-2by1 has-background-white">
                 <img src="assets/images/giftastic-group.png" alt="giftastic">
             </p>
         </div>
         <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
     </div>
-    <div class="modal image-modal train-modal">
+    <div class="modal image-modal train-modal modal-fx-superScaled">
         <div class="modal-background"></div>
-        <div class="modal-content">
+        <div class="modal-content is-huge">
             <p class="image box is-2by1 has-background-white">
                 <img src="assets/images/train-group.png" alt="train scheduler">
             </p>
         </div>
         <button class="modal-close is-large train-delete" aria-label="close"></button>
     </div>
-    <div class="modal image-modal crystal-modal">
+    <div class="modal image-modal crystal-modal modal-fx-superScaled">
         <div class="modal-background"></div>
-        <div class="modal-content">
+        <div class="modal-content is-huge">
             <p class="image box is-2by1 has-background-white">
                 <img src="assets/images/crystal-group.png" alt="crystal collector">
             </p>
@@ -103,8 +115,8 @@
     <section class="hero is-fullheight splash-page" id="hero">
         <div class="hero-body">
             <div class="container has-text-centered">
-            <h1 class="title has-text-info" id="hero-text">Hi I'm Blake Neely and I'm a full stack web developer</h1>
-            <a class="button is-large is-outlined is-info hero-button" id="hero-button">Learn More</a>
+            <h1 class="title has-text-info" id="hero-text">Hello, I'm Blake Neely. Welcome to my portfolio.</h1>
+            <a class="button is-large is-outlined is-info hero-button is-rounded" id="hero-button">See Inside</a>
             </div>
         </div>
     </section>
@@ -320,6 +332,7 @@
         </footer>
     </section>
 
+    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
