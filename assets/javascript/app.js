@@ -50,26 +50,30 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showFriendFinderModal(){
+        $(".friendFinder-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showHuddleModal(){
         $(".huddle-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
-    }
+    };
     function showGiftasticModal(){
         $(".giftastic-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
-    }
+    };
     function showTrainModal(){
         $(".train-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
-    }
+    };
     function showCrystalModal(){
         $(".crystal-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
-    }
+    };
     function showResume(){
         $(".resume-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
-    }
+    };
     // Contact Form Event Listener 
     $(document).on('click', '#contact-submit', function(){
         saveContact();
@@ -77,9 +81,12 @@ $(document).ready(function() {
     });
     $(document).on("click", ".thanks-delete", function(){
         $(".thanks-modal").toggleClass("is-active");
-    })
+    });
 
     // Modal Event Listeners
+    $("#friendFinder-image").on("click", showFriendFinderModal);
+    $(".friendFinder-delete").on("click", showFriendFinderModal);
+
     $("#giftastic-image").on("click", showGiftasticModal);
     $(".giftastic-delete").on("click", showGiftasticModal);
 

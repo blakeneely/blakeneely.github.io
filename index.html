@@ -15,6 +15,7 @@
 
 <body>
     <!-- ******* Hidden Modals ******* -->
+    <!-- Thank You Modal -->
     <div class="modal thanks-modal has-text-centered">
         <div class="modal-background"></div>
         <div class="modal-content">
@@ -24,7 +25,18 @@
             </p>
         </div>
             <button class="modal-close is-large thanks-delete" aria-label="close"></button>
+    </div>
+    <!-- FriendFinder Modal -->
+    <div class="modal image-modal friendFinder-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/friendfinder-group.png" alt="friend finder">
+            </p>
         </div>
+        <button class="modal-close is-large friendFinder-delete" aria-label="close"></button>
+    </div>
+    <!-- Huddle Modal -->
     <div class="modal image-modal huddle-modal modal-fx-superScaled">
         <div class="modal-background"></div>
         <div class="modal-content is-huge">
@@ -34,6 +46,7 @@
         </div>
         <button class="modal-close is-large huddle-delete" aria-label="close"></button>
     </div>
+    <!-- Resume Modal -->
     <div class="modal resume-modal">
         <div class="modal-background"></div>
         <div class="modal-content">
@@ -41,6 +54,7 @@
         </div>
         <button class="modal-close is-large resume-delete" aria-label="close"></button>
     </div> 
+    <!-- Giftastic Modal -->
     <div class="modal image-modal giftastic-modal modal-fx-superScaled">
         <div class="modal-background"></div>
         <div class="modal-content is-huge">
@@ -50,6 +64,7 @@
         </div>
         <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
     </div>
+    <!-- Train Modal -->
     <div class="modal image-modal train-modal modal-fx-superScaled">
         <div class="modal-background"></div>
         <div class="modal-content is-huge">
@@ -59,6 +74,7 @@
         </div>
         <button class="modal-close is-large train-delete" aria-label="close"></button>
     </div>
+    <!-- Crystal Modal -->
     <div class="modal image-modal crystal-modal modal-fx-superScaled">
         <div class="modal-background"></div>
         <div class="modal-content is-huge">
@@ -68,6 +84,7 @@
         </div>
         <button class="modal-close is-large crystal-delete" aria-label="close"></button>
     </div>
+    <!-- Contact Modal -->
     <div class="modal contact-modal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -110,7 +127,7 @@
                 </div>
             </footer>
         </div>
-        </div>
+    </div>
     <!-- ***** Hero Splash Page ***** -->
     <section class="hero is-fullheight splash-page" id="hero">
         <div class="hero-body">
@@ -177,6 +194,47 @@
         <section>
             <div class="container projects has-text-info">
                 <h2 class="is-size-5 project-title">Recent Projects:</h2>
+                <!-- ***** Project 0 ***** -->
+                <div class="columns project-boxes has-text-centered is-vcentered reverse-row-order">
+                    <div class="column">
+                        <figure class="image project-image is-1x1" id="friendFinder-image">
+                            <img src="assets/images/friendfinder-group.png" alt="friendfinder">
+                        </figure>
+                    </div>
+                    <div class="column project-description-column">
+                        <h2 class="is-size-2 has-text-centered">Friend Finder</h2>
+                        <p class="project-text is-size-5 has-text-grey-dark">Friend Finder is a full stack web app to match people with similar interests. Using HTML5, CSS, and Bulma.io frameworks for styling, JavaScript and Node does most of the heavy lifting. Users fill out a quick survey and are immediately presented with the person they best match with!</p>
+
+                        <p class="project-text is-size-5 has-text-grey-dark">Express handles the Get and Post requests and server set up and routing. Path delivers the HTML files. And jQuery grabs the values from the HTML survey form and Posts the data to the API with AJAX. </p>
+                        <div class="columns is-vcentered is-mobile">
+                            <div class="column is-one-third">
+                                <p class="is-size-5">Built with:</p>
+                                <ul class="tech-list has-text-left has-text-grey-dark">
+                                    <li>HTML5 & CSS</li>
+                                    <li>Bulma</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>AJAX</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Path</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://cryptic-eyrie-01155.herokuapp.com/" target="_blank">
+                                    Live look
+                                </a>
+                                <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://github.com/blakeneely/friendfinder" target="_blank">
+                                    <span class="icon is-medium">
+                                        <i class="fab fa-github git-icon"></i>
+                                    </span>
+                                    &ltcode&gt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
                 <!-- ***** Project 1 ***** -->
                 <div class="columns project-boxes has-text-centered is-vcentered">
                     <div class="column">
