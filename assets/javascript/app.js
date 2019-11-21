@@ -50,6 +50,10 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showBingeModal(){
+        $(".binge-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showFriendFinderModal(){
         $(".friendFinder-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -84,6 +88,9 @@ $(document).ready(function() {
     });
 
     // Modal Event Listeners
+    $("#binge-image").on("click", showBingeModal);
+    $(".binge-delete").on("click", showBingeModal);
+
     $("#friendFinder-image").on("click", showFriendFinderModal);
     $(".friendFinder-delete").on("click", showFriendFinderModal);
 

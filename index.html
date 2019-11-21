@@ -26,6 +26,16 @@
         </div>
             <button class="modal-close is-large thanks-delete" aria-label="close"></button>
     </div>
+    <!-- Binge Modal -->
+    <div class="modal image-modal binge-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/binge-group.png" alt="binge">
+            </p>
+        </div>
+        <button class="modal-close is-large binge-delete" aria-label="close"></button>
+    </div>
     <!-- FriendFinder Modal -->
     <div class="modal image-modal friendFinder-modal modal-fx-superScaled">
         <div class="modal-background"></div>
@@ -194,8 +204,48 @@
         <section>
             <div class="container projects has-text-info">
                 <h2 class="is-size-5 project-title">Recent Projects:</h2>
-                <!-- ***** Project 0 ***** -->
+                <!-- ***** Project 5 ***** -->
                 <div class="columns project-boxes has-text-centered is-vcentered reverse-row-order">
+                    <div class="column">
+                        <figure class="image project-image is-1x1" id="binge-image">
+                            <img src="assets/images/binge-group.png" alt="binge">
+                        </figure>
+                    </div>
+                    <div class="column project-description-column">
+                        <h2 class="is-size-2 has-text-centered">Binge</h2>
+                        <p class="project-text is-size-5 has-text-grey-dark">Binge is a full stack movie search and save to watch later web app. You can search by movie title or search for specific actors. Whenever you find a movie you're interested in you can click on it to read the plot, see the actors and directors and watch the trailer! Once you find one you like click the Binge button to add it to your list. Check out your list in the top right corner, once you binge watch the movie on your time simply remove it from your list. As always, binge responsibly!</p>
+                        <div class="columns is-vcentered is-mobile">
+                            <div class="column is-one-third">
+                                <p class="is-size-5">Technologies:</p>
+                                <ul class="tech-list has-text-left has-text-grey-dark">
+                                    <li>HTML5/CSS/Bulma</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>AJAX</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>mySQL</li>
+                                    <li>Sequelize</li>
+                                    <li>Handlebars.js</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://sleepy-waters-84015.herokuapp.com/" target="_blank">
+                                    Live look
+                                </a>
+                                <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://github.com/blakeneely/binge" target="_blank">
+                                    <span class="icon is-medium">
+                                        <i class="fab fa-github git-icon"></i>
+                                    </span>
+                                    &ltcode&gt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- ***** Project 4 ***** -->
+                <div class="columns project-boxes has-text-centered is-vcentered">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="friendFinder-image">
                             <img src="assets/images/friendfinder-group.png" alt="friendfinder">
@@ -208,7 +258,7 @@
                         <p class="project-text is-size-5 has-text-grey-dark">Express handles the Get and Post requests and server set up and routing. Path delivers the HTML files. And jQuery grabs the values from the HTML survey form and Posts the data to the API with AJAX. </p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
-                                <p class="is-size-5">Built with:</p>
+                                <p class="is-size-5">Technologies:</p>
                                 <ul class="tech-list has-text-left has-text-grey-dark">
                                     <li>HTML5 & CSS</li>
                                     <li>Bulma</li>
@@ -235,8 +285,8 @@
                     </div>
                 </div>
                 <hr>
-                <!-- ***** Project 1 ***** -->
-                <div class="columns project-boxes has-text-centered is-vcentered">
+                <!-- ***** Project 3 ***** -->
+                <div class="columns project-boxes has-text-centered is-vcentered reverse-row-order">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="huddle-image">
                             <img src="assets/images/huddle-group.png" alt="huddle">
@@ -247,7 +297,7 @@
                         <p class="project-text is-size-5 has-text-grey-dark">Using APIs from ESPN and Mysportsfeed, Huddle is a fully mobile-responsive app for trending NFL news and player stats with all of the clutter remvoved. Search for up to date player statistics or simply check out the trending top stories around the league.</p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
-                                <p class="is-size-5">Built with:</p>
+                                <p class="is-size-5">Technologies:</p>
                                 <ul class="tech-list has-text-left has-text-grey-dark">
                                     <li>HTML5 & CSS</li>
                                     <li>Bulma</li>
@@ -273,7 +323,7 @@
                 </div>
                 <hr>
                 <!-- ***** Project 2 ***** -->
-                <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
+                <div class="columns project-boxes is-vcentered has-text-centered">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="giftastic-image">
                             <img src="assets/images/giftastic-group.png" alt="giftastic">
@@ -284,7 +334,7 @@
                         <p class="project-text is-size-5 has-text-grey-dark">Giftastic is a mobile-responsive searchable gif app using GIPHY's API. Click the buttons to load top gifs, use the search box to add more buttons of your choice! </p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
-                                <p class="is-size-5">Built with:</p>
+                                <p class="is-size-5">Technologies:</p>
                                 <ul class="tech-list has-text-left has-text-grey-dark">
                                     <li>HTML5 & CSS</li>
                                     <li>Bootstrap</li>
@@ -308,8 +358,8 @@
                     </div>
                 </div>
                 <hr>
-                <!-- ***** Project 3 ***** -->
-                <div class="columns project-boxes is-vcentered has-text-centered">
+                <!-- ***** Project 1 ***** -->
+                <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="train-image">
                             <img src="assets/images/train-group.png" alt="train scheduler">
@@ -320,7 +370,7 @@
                         <p class="project-text is-size-5 has-text-grey-dark">Train Scheduler is a mobile-responsive scheduling app using Google Firebase and Moment.js. Add a train name, location, arrival time and frequency interval and watch as the table updates based on the user's current time.</p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
-                                <p class="is-size-5">Built with:</p>
+                                <p class="is-size-5">Technologies:</p>
                                 <ul class="tech-list has-text-left has-text-grey-dark">
                                     <li>HTML5 & CSS</li>
                                     <li>Bootstrap</li>
@@ -345,8 +395,8 @@
                     </div>
                 </div>
                 <hr>
-                <!-- ***** Project 4 ***** -->
-                <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
+                <!-- ***** Project 0 ***** -->
+                <div class="columns project-boxes is-vcentered has-text-centered">
                     <div class="column">
                         <figure class="image project-image is-1x1 container" id="crystal-image">
                             <img src="assets/images/crystal-group.png" alt="crystal collector">
@@ -357,7 +407,7 @@
                         <p class="project-text is-size-5 has-text-grey-dark">This is logic game where each crystal is assigned a hidden value for each round that adds to the score when clicked. The object is to match the Magic Number by clicking the Crystals. Match the Magic Number, you win and hear a sound. Go over the Magic Number and you lose and hear a sound.</p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
-                                <p class="is-size-5">Built with:</p>
+                                <p class="is-size-5">Technologies:</p>
                                 <ul class="tech-list has-text-left has-text-grey-dark">
                                     <li>HTML5 & CSS</li>
                                     <li>JavaScript</li>
