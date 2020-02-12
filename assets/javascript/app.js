@@ -50,6 +50,10 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showTechFeedModal(){
+        $(".techfeed-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showBingeModal(){
         $(".binge-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -88,6 +92,9 @@ $(document).ready(function() {
     });
 
     // Modal Event Listeners
+    $("#techfeed-image").on("click", showTechFeedModal);
+    $(".techfeed-delete").on("click", showTechFeedModal);   
+    
     $("#binge-image").on("click", showBingeModal);
     $(".binge-delete").on("click", showBingeModal);
 

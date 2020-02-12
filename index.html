@@ -80,6 +80,44 @@
         <section>
             <div class="container projects has-text-info">
                 <h2 class="is-size-5 project-title">Recent Projects:</h2>
+                    <!-- ***** Project 6 ***** -->
+                    <div class="columns project-boxes has-text-centered is-vcentered">
+                        <div class="column">
+                            <figure class="image project-image is-1x1" id="techfeed-image">
+                                <img src="assets/images/techfeed-group.png" alt="techfeed">
+                            </figure>
+                        </div>
+                        <div class="column project-description-column">
+                            <h2 class="is-size-2 has-text-centered">TechFeed</h2>
+                            <p class="project-text is-size-5 has-text-grey-dark">Using Cheerio to scrape from some of the most popular tech blogs, TechFeeds grabs the top stories of the day and displays them in one easy location. Any article you find that you like to keep for later just click the "Save Later" button. </p>
+                            <div class="columns is-vcentered is-mobile">
+                                <div class="column is-one-third">
+                                    <p class="is-size-5">Technologies:</p>
+                                    <ul class="tech-list has-text-left has-text-grey-dark">
+                                        <li>HTML5 & CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>Handlebars</li>
+                                        <li>Cheerio</li>
+                                        <li>MongoDB</li>
+                                        <li>Express.js</li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://cryptic-eyrie-01155.herokuapp.com/" target="_blank">
+                                        Live look
+                                    </a>
+                                    <a class="button is-medium is-outlined is-info is-rounded code-button" href="https://github.com/blakeneely/friendfinder" target="_blank">
+                                        <span class="icon is-medium">
+                                            <i class="fab fa-github git-icon"></i>
+                                        </span>
+                                        &ltcode&gt
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
                 <!-- ***** Project 5 ***** -->
                 <div class="columns project-boxes has-text-centered is-vcentered reverse-row-order">
                     <div class="column">
@@ -89,7 +127,7 @@
                     </div>
                     <div class="column project-description-column">
                         <h2 class="is-size-2 has-text-centered">Binge</h2>
-                        <p class="project-text is-size-5 has-text-grey-dark">Binge is a full stack movie search and save to watch later web app. You can search by movie title or search for specific actors. Whenever you find a movie you're interested in you can click on it to read the plot, see the actors and directors and watch the trailer! Once you find one you like click the Binge button to add it to your list. Check out your list in the top right corner, once you binge watch the movie on your time simply remove it from your list. As always, binge responsibly!</p>
+                        <p class="project-text is-size-5 has-text-grey-dark">Binge is a full stack movie search and save to watch later web app. You can search by movie title or search for specific actors. Whenever you find a movie you're interested in you can click on it to read the plot, see the actors and directors and watch the trailer or save it to check out later!</p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
                                 <p class="is-size-5">Technologies:</p>
@@ -130,8 +168,6 @@
                     <div class="column project-description-column">
                         <h2 class="is-size-2 has-text-centered">Friend Finder</h2>
                         <p class="project-text is-size-5 has-text-grey-dark">Friend Finder is a full stack web app to match people with similar interests. Using HTML5, CSS, and Bulma.io frameworks for styling, JavaScript and Node does most of the heavy lifting. Users fill out a quick survey and are immediately presented with the person they best match with!</p>
-
-                        <p class="project-text is-size-5 has-text-grey-dark">Express handles the Get and Post requests and server set up and routing. Path delivers the HTML files. And jQuery grabs the values from the HTML survey form and Posts the data to the API with AJAX. </p>
                         <div class="columns is-vcentered is-mobile">
                             <div class="column is-one-third">
                                 <p class="is-size-5">Technologies:</p>
@@ -235,7 +271,7 @@
                 </div>
                 <hr>
                 <!-- ***** Project 1 ***** -->
-                <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
+                <!-- <div class="columns project-boxes is-vcentered has-text-centered reverse-row-order">
                     <div class="column">
                         <figure class="image project-image is-1x1" id="train-image">
                             <img src="assets/images/train-group.png" alt="train scheduler">
@@ -270,9 +306,9 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr> -->
                 <!-- ***** Project 0 ***** -->
-                <div class="columns project-boxes is-vcentered has-text-centered">
+                <!-- <div class="columns project-boxes is-vcentered has-text-centered">
                     <div class="column">
                         <figure class="image project-image is-1x1 container" id="crystal-image">
                             <img src="assets/images/crystal-group.png" alt="crystal collector">
@@ -303,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -319,6 +355,16 @@
         </div>
             <button class="modal-close is-large thanks-delete" aria-label="close"></button>
     </div>
+    <!-- TechFeed Modal -->
+    <div class="modal image-modal techfeed-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/techfeed-group.png" alt="techfeed">
+            </p>
+        </div>
+        <button class="modal-close is-large techfeed-delete" aria-label="close"></button>
+    </div>    
     <!-- Binge Modal -->
     <div class="modal image-modal binge-modal modal-fx-superScaled">
         <div class="modal-background"></div>
