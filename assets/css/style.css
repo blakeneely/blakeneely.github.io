@@ -17,6 +17,9 @@ body {
 .navbar-burger {
     margin-top: 1em;
 }
+.contact {
+    margin-right: 2em;
+}
 .splash-page {
     background: white;
 }
@@ -39,6 +42,7 @@ body {
     bottom: -80px;
     background: white;
     padding: 1em 1em 0 1em;
+    border-radius: 25px;
 }
 .head-shot a {
     color: hsl(0, 0%, 29%);
@@ -48,6 +52,11 @@ body {
 }
 .projects {
     margin-top: 2em;
+    max-width: 1000px;
+}
+.about-me {
+    margin-top: 5em;
+    margin-bottom: 5em;
     max-width: 1000px;
 }
 .reverse-row-order {
@@ -62,6 +71,9 @@ body {
 }
 .project-description-column {
     padding: 2em;
+}
+.about-me-text {
+    margin: 1em 3em;
 }
 .project-text {
     margin-bottom: 10px;
