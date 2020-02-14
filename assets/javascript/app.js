@@ -50,6 +50,10 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showClickyGameModal(){
+        $(".clicky-game-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showTechFeedModal(){
         $(".techfeed-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -70,14 +74,6 @@ $(document).ready(function() {
         $(".giftastic-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
-    function showTrainModal(){
-        $(".train-modal").toggleClass("is-active");
-        $(".html").toggleClass("is-clipped");
-    };
-    function showCrystalModal(){
-        $(".crystal-modal").toggleClass("is-active");
-        $(".html").toggleClass("is-clipped");
-    };
     function showResume(){
         $(".resume-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -92,6 +88,9 @@ $(document).ready(function() {
     });
 
     // Modal Event Listeners
+    $("#clicky-game-image").on("click", showClickyGameModal);
+    $(".clicky-game-delete").on("click", showClickyGameModal);   
+
     $("#techfeed-image").on("click", showTechFeedModal);
     $(".techfeed-delete").on("click", showTechFeedModal);   
     
@@ -103,13 +102,6 @@ $(document).ready(function() {
 
     $("#giftastic-image").on("click", showGiftasticModal);
     $(".giftastic-delete").on("click", showGiftasticModal);
-
-    $("#train-image").on("click", showTrainModal);
-    $(".train-delete").on("click", showTrainModal);
-
-    $("#crystal-image").on("click", showCrystalModal);
-    $(".crystal-delete").on("click", showCrystalModal);
-
 
     $("#huddle-image").on("click", showHuddleModal);
     $(".huddle-delete").on("click", showHuddleModal);
