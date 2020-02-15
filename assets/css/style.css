@@ -14,6 +14,14 @@ body {
 .nav-icon {
     margin: 1em;
 }
+.navbar-end a:hover,
+.navbar-end a:focus,
+.navbar-end a:active {
+    color: hsl(0, 0%, 29%);
+    font-weight: 700;
+    background-color: #09B2E4;
+    border-radius: 50px;
+}
 .blue-text {
     color: #09B2E4;
 }
