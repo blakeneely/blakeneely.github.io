@@ -5,9 +5,30 @@
 .hidden {
     display: none;
 }
+.reverse-row-order {
+    flex-direction: row-reverse;
+}
+.blue-text {
+    color: #09B2E4;
+}
+/* Buttons */
+.button {
+    background-color: white;
+    color: #09B2E4;
+    border-color: #09B2E4;
+    transition-duration: 0.4s;
+}
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #09B2E4;
+    color: white;
+    border-color: #09B2E4;
+}
 body {
     background: white;
 }
+/* Navbar */
 .navbar {
     background: none;
 }
@@ -21,22 +42,6 @@ body {
     font-weight: 700;
     background-color: #09B2E4;
     border-radius: 50px;
-}
-.blue-text {
-    color: #09B2E4;
-}
-.button {
-    background-color: white;
-    color: #09B2E4;
-    border-color: #09B2E4;
-    transition-duration: 0.4s;
-}
-.button:hover,
-.button:focus,
-.button:active {
-    background-color: #09B2E4;
-    color: white;
-    border-color: #09B2E4;
 }
 .navbar-burger {
     margin-top: 1em;
@@ -74,31 +79,50 @@ body {
 .head-shot a:hover {
     color: hsl(204, 86%, 53%);
 }
-.projects {
-    margin-top: 2em;
-    max-width: 1000px;
+/* About Me Section */
+.about-me-section {
+    background-color: #09B2E4;
+    margin-top: -110px;
+    margin-bottom: 10em;
+    padding-top: 10em;
+    padding-bottom: 10em;
 }
 .about-me {
-    margin-top: 5em;
-    margin-bottom: 5em;
     max-width: 1000px;
 }
-.reverse-row-order {
-    flex-direction: row-reverse;
-  }
-.project-title {
-    margin: 1em;
-}
-.project-boxes {
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.project-description-column {
-    padding: 2em;
+.about-me-title {
+    margin: 1em 1em 0 1em;
 }
 .about-me-text {
     margin: 1em 3em;
 }
+/* Projects Section */
+.projects-section {
+    margin-bottom: -100px;
+    background-color: #FAFAFA;
+}
+.projects {
+    margin-top: -10em;
+    max-width: 1000px;
+    border-radius: 25px;
+    position: relative;
+    top: -80px;
+}
+.project-title {
+    /* margin: -5em 0 0 0; */
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+    border-radius: 25px;
+
+}
+.project-boxes {
+    margin-bottom: 50px;
+    margin-top: 1em;
+}
+.project-description-column {
+    padding: 2em;
+}
+
 .project-text {
     margin-bottom: 10px;
 }
