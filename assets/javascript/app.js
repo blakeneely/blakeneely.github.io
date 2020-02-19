@@ -50,6 +50,10 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showGoogleBooksModal(){
+        $(".googleBooks-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showClickyGameModal(){
         $(".clicky-game-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -60,10 +64,6 @@ $(document).ready(function() {
     };
     function showBingeModal(){
         $(".binge-modal").toggleClass("is-active");
-        $(".html").toggleClass("is-clipped");
-    };
-    function showFriendFinderModal(){
-        $(".friendFinder-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
     function showHuddleModal(){
@@ -88,6 +88,9 @@ $(document).ready(function() {
     });
 
     // Modal Event Listeners
+    $("#googleBooks-image").on("click", showGoogleBooksModal);
+    $(".googleBooks-delete").on("click", showGoogleBooksModal);
+
     $("#clicky-game-image").on("click", showClickyGameModal);
     $(".clicky-game-delete").on("click", showClickyGameModal);   
 
@@ -96,9 +99,6 @@ $(document).ready(function() {
     
     $("#binge-image").on("click", showBingeModal);
     $(".binge-delete").on("click", showBingeModal);
-
-    $("#friendFinder-image").on("click", showFriendFinderModal);
-    $(".friendFinder-delete").on("click", showFriendFinderModal);
 
     $("#giftastic-image").on("click", showGiftasticModal);
     $(".giftastic-delete").on("click", showGiftasticModal);
