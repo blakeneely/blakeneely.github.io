@@ -50,6 +50,10 @@ $(document).ready(function() {
         $(".contact-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
     };
+    function showReactWeatherModal(){
+        $(".reactWeather-modal").toggleClass("is-active");
+        $(".html").toggleClass("is-clipped");
+    };
     function showGoogleBooksModal(){
         $(".googleBooks-modal").toggleClass("is-active");
         $(".html").toggleClass("is-clipped");
@@ -88,6 +92,9 @@ $(document).ready(function() {
     });
 
     // Modal Event Listeners
+    $("#reactWeather-image").on("click", showReactWeatherModal);
+    $(".reactWeather-delete").on("click", showReactWeatherModal);
+
     $("#googleBooks-image").on("click", showGoogleBooksModal);
     $(".googleBooks-delete").on("click", showGoogleBooksModal);
 

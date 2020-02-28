@@ -24,7 +24,144 @@
             </div>
         </div>
     </section>
+    
     <!-- ***** New Body Start ***** -->
+
+            <!-- ******* Hidden Modals ******* -->
+    <!-- Thank You Modal -->
+    <div class="modal thanks-modal has-text-centered">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <!-- Any other Bulma elements you want -->
+            <p class="box thanks-box is-size-5">
+                Thank you for leaving me a message!
+            </p>
+        </div>
+            <button class="modal-close is-large thanks-delete" aria-label="close"></button>
+    </div>
+    <!-- React Weather Modal -->
+    <div class="modal image-modal reactWeather-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/weather_group.png" alt="react weather">
+            </p>
+        </div>
+        <button class="modal-close is-large reactWeather-delete" aria-label="close"></button>
+    </div>
+    <!-- Google Books Modal -->
+    <div class="modal image-modal googleBooks-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/google-books-group.png" alt="google books">
+            </p>
+        </div>
+        <button class="modal-close is-large googleBooks-delete" aria-label="close"></button>
+    </div>
+    <!-- Clicky Game Modal -->
+    <div class="modal image-modal clicky-game-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/clicky-game-group.png" alt="techfeed">
+            </p>
+        </div>
+        <button class="modal-close is-large clicky-game-delete" aria-label="close"></button>
+    </div>    
+    <!-- TechFeed Modal -->
+    <div class="modal image-modal techfeed-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/techfeed-group.png" alt="techfeed">
+            </p>
+        </div>
+        <button class="modal-close is-large techfeed-delete" aria-label="close"></button>
+    </div>    
+    <!-- Binge Modal -->
+    <div class="modal image-modal binge-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/binge-group.png" alt="binge">
+            </p>
+        </div>
+        <button class="modal-close is-large binge-delete" aria-label="close"></button>
+    </div>
+    <!-- Huddle Modal -->
+    <div class="modal image-modal huddle-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/huddle-group.png" alt="huddle">
+            </p>
+        </div>
+        <button class="modal-close is-large huddle-delete" aria-label="close"></button>
+    </div>
+    <!-- Resume Modal -->
+    <div class="modal resume-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <iframe src="assets/images/BlakeNeely-resume.pdf" style="width:640px; height:800px;" frameborder="0"></iframe>
+        </div>
+        <button class="modal-close is-large resume-delete" aria-label="close"></button>
+    </div> 
+    <!-- Giftastic Modal -->
+    <div class="modal image-modal giftastic-modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge">
+            <p class="image box is-2by1 has-background-white">
+                <img src="assets/images/giftastic-group.png" alt="giftastic">
+            </p>
+        </div>
+        <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
+    </div>
+    <!-- Contact Modal -->
+    <div class="modal contact-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Contact Me</p>
+                <button class="delete contact-delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="contact-container container">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input is-medium is-rounded" type="text" placeholder="Name" id="name-input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-medium is-rounded" type="email" placeholder="example@example.com" id="email-input">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" id="message-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="field">
+                    <div class="control">
+                        <a class="hero-button button is-info is-rounded" id="contact-submit">
+                            Submit
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
     <!-- ***** Navbar ***** -->
     <section class="body has-text-grey-dark hidden">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -93,6 +230,44 @@
         <section class="projects-section">
             <div class="container projects blue-text card">
                 <h2 class="is-size-3 project-title">Recent Projects:</h2>
+                    <!-- ***** Project 9 ***** -->
+                    <div class="columns project-boxes has-text-centered is-vcentered reverse-row-order">
+                        <div class="column">
+                            <figure class="image project-image is-1x1" id="reactWeather-image">
+                                <img src="assets/images/weather_group.png" alt="react weather" class="hvr-grow">
+                            </figure>
+                        </div>
+                        <div class="column project-description-column">
+                            <h2 class="is-size-3 has-text-centered">React Weather</h2>
+                            <p class="project-text is-size-5 has-text-grey-dark">Using an API call to <a href="https://openweathermap.org/" target="_blank">Open Weather</a> and mix in some wonderfully crafted weather icons from <a href="https://erikflowers.github.io/weather-icons/" target="_blank">Erik Flowers</a>, React Weather is a beautiful app to grab the weather conditions across the globe. Just enter a city and country and watch as the weather updates below! </p>
+                            <div class="columns is-vcentered is-mobile">
+                                <div class="column is-one-third">
+                                    <p class="is-size-5">Technologies:</p>
+                                    <ul class="tech-list has-text-left has-text-grey-dark">
+                                        <li>HTML5 & CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Open Weather</li>
+                                        <li>WeatherIcons</li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <a class="button is-medium is-rounded code-button" href="https://blakeneely.github.io/react-weather/" target="_blank">
+                                        Live look
+                                    </a>
+                                    <a class="button is-medium is-rounded code-button" href="https://github.com/blakeneely/react-weather" target="_blank">
+                                        <span class="icon is-medium">
+                                            <i class="fab fa-github git-icon"></i>
+                                        </span>
+                                        &ltcode&gt
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                
                     <!-- ***** Project 8 ***** -->
                     <div class="columns project-boxes has-text-centered is-vcentered">
                         <div class="column">
@@ -322,130 +497,6 @@
             </div>
         </section>
 
-            <!-- ******* Hidden Modals ******* -->
-    <!-- Thank You Modal -->
-    <div class="modal thanks-modal has-text-centered">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <!-- Any other Bulma elements you want -->
-            <p class="box thanks-box is-size-5">
-                Thank you for leaving me a message!
-            </p>
-        </div>
-            <button class="modal-close is-large thanks-delete" aria-label="close"></button>
-    </div>
-    <!-- Google Books Modal -->
-    <div class="modal image-modal googleBooks-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/google-books-group.png" alt="google books">
-            </p>
-        </div>
-        <button class="modal-close is-large googleBooks-delete" aria-label="close"></button>
-    </div>
-    <!-- Clicky Game Modal -->
-    <div class="modal image-modal clicky-game-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/clicky-game-group.png" alt="techfeed">
-            </p>
-        </div>
-        <button class="modal-close is-large clicky-game-delete" aria-label="close"></button>
-    </div>    
-    <!-- TechFeed Modal -->
-    <div class="modal image-modal techfeed-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/techfeed-group.png" alt="techfeed">
-            </p>
-        </div>
-        <button class="modal-close is-large techfeed-delete" aria-label="close"></button>
-    </div>    
-    <!-- Binge Modal -->
-    <div class="modal image-modal binge-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/binge-group.png" alt="binge">
-            </p>
-        </div>
-        <button class="modal-close is-large binge-delete" aria-label="close"></button>
-    </div>
-    <!-- Huddle Modal -->
-    <div class="modal image-modal huddle-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/huddle-group.png" alt="huddle">
-            </p>
-        </div>
-        <button class="modal-close is-large huddle-delete" aria-label="close"></button>
-    </div>
-    <!-- Resume Modal -->
-    <div class="modal resume-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <iframe src="assets/images/BlakeNeely-resume.pdf" style="width:640px; height:800px;" frameborder="0"></iframe>
-        </div>
-        <button class="modal-close is-large resume-delete" aria-label="close"></button>
-    </div> 
-    <!-- Giftastic Modal -->
-    <div class="modal image-modal giftastic-modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge">
-            <p class="image box is-2by1 has-background-white">
-                <img src="assets/images/giftastic-group.png" alt="giftastic">
-            </p>
-        </div>
-        <button class="modal-close is-large giftastic-delete" aria-label="close"></button>
-    </div>
-    <!-- Contact Modal -->
-    <div class="modal contact-modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Contact Me</p>
-                <button class="delete contact-delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-                <div class="contact-container container">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input is-medium is-rounded" type="text" placeholder="Name" id="name-input">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input class="input is-medium is-rounded" type="email" placeholder="example@example.com" id="email-input">
-                            <span class="icon is-small is-left">
-                            <i class="fas fa-envelope"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" id="message-input"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer class="modal-card-foot">
-                <div class="field">
-                    <div class="control">
-                        <a class="hero-button button is-info is-rounded" id="contact-submit">
-                            Submit
-                        </a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
         <!-- ***** Footer ***** -->
         <footer class="footer">
             <div class="content has-text-centered">
