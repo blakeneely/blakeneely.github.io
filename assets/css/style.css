@@ -37,6 +37,12 @@ li {
   margin-left: 0.5em;
 }
 
+::placeholder {
+  font-weight: 200;
+  color: rgb(182, 182, 182);
+  opacity: 1;
+}
+
 .container {
   max-width: 1024px;
   margin: auto;
@@ -123,6 +129,7 @@ iframe {
   font-size: 1.2em;
   color: #333;
   /* border-style: 1px solid #fafafa; */
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.288);
   border: none;
   border-radius: 50px;
   outline: none;
@@ -141,6 +148,7 @@ iframe {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   color: #333;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.288);
   outline: none;
   padding: 0.5em 1em;
 }
