@@ -364,13 +364,17 @@ nav img {
   color: #09b2e4;
 }
 
+/* .service-card span i {
+  filter: drop-shadow(3px 3px 10px #ffffff);
+} */
+
 .service-card h2 {
   padding: 0.5em;
 }
 
 .service-card p {
   padding: 0 1em;
-  font-size: 1.1;
+  font-size: 1.1em;
 }
 
 /* Projects */
@@ -512,6 +516,7 @@ nav img {
 }
 
 /* Companies */
+
 .companies-container {
   height: 600px;
   margin-top: -50px;
