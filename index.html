@@ -23,17 +23,39 @@
     <!-- Header -->
     <div class="header">
       <!-- Navbar -->
-      <nav>
-        <div class="logo">
-          <img src="assets/images/neelystudiologo.png" alt="neely media logo" />
-        </div>
-        <div>
-          <a class="resume-link" id="resumeLink">Resume</a>
-          <a id="contactLink">Contact</a>
-        </div>
-      </nav>
+      <div class="nav-container">
+        <nav>
+          <div class="logo-and-name">
+            <div class="logo">
+              <img
+                src="assets/images/neelystudiologo.png"
+                alt="neely media logo"
+              />
+            </div>
 
-      <div class="headshot-card">
+            <p><span>Neely</span>Studio</p>
+          </div>
+
+          <div>
+            <a class="resume-link" id="resumeLink">Resume</a>
+            <a id="contactLink">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="welcome">
+        <div class="welcome-text">
+          <h2>Welcome to Neely Studio</h2>
+          <h1>Web development & digital marketing</h1>
+        </div>
+        <div class="welcome-line">
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Headshot Card -->
+    <!-- <div class="headshot-card">
         <img src="assets/images/me.png" alt="" />
         <div class="headshot-text">
           <h1>Blake Neely</h1>
@@ -59,24 +81,65 @@
             </span>
           </a>
         </div>
+      </div> -->
+
+    <!-- About -->
+
+    <div class="about">
+      <div class="about-image">
+        <div class="headshot">
+          <img src="assets/images/me.png" alt="Blake Neely" />
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="about-title">
+          <h1>About Blake Neely</h1>
+        </div>
+        <div class="about-summary">
+          <p>
+            As a solutions expert with 10 years of experience in the digital
+            tech industry analyzing data and delivering measurable results,
+            Blake has grown a fond love of technology and modern trends. He has
+            collaborated with talented people to create some incredible products
+            and apps. He enjoys clean, modern designs and building products so
+            simple that everyone can use that look outstanding on all devices.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- About Me -->
-    <div class="about">
-      <div class="about-title container">
-        <h1>About Me:</h1>
-      </div>
-      <div class="about-text container">
-        <p>
-          As a solutions expert with 10 years of experience in the digital tech
-          industry analyzing data and delivering measurable results, I have
-          grown a fond love of technology and modern trends and look forward to
-          continuing my journey throughout 2021. I have collaborated with
-          talented people to create some incredible products and apps. I enjoy
-          clean, sleek designs and building products so simple that everyone can
-          use that look outstanding on all devices.
-        </p>
+    <!-- Follow Us -->
+
+    <div class="follow">
+      <div class="follow-container">
+        <div class="follow-title">
+          <h1>Follow us</h1>
+        </div>
+        <div class="follow-links">
+          <a
+            href="https://www.youtube.com/channel/UCcZs1Cp_AZeFsByFQzeXqBg"
+            target="_blank"
+          >
+            <div class="follow-icon">
+              <i class="fab fa-3x fa-youtube hvr-grow"></i>
+            </div>
+          </a>
+          <a href="https://github.com/blakeneely/" target="_blank">
+            <div class="follow-icon">
+              <i class="fab fa-3x fa-github hvr-grow"></i>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/blakeneely/" target="_blank">
+            <div class="follow-icon">
+              <i class="fab fa-3x fa-linkedin hvr-grow"></i>
+            </div>
+          </a>
+          <a href="https://twitter.com/NeelyStudio" target="_blank">
+            <div class="follow-icon">
+              <i class="fab fa-3x fa-twitter hvr-grow"></i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -92,7 +155,7 @@
 
     <div class="services">
       <div class="services-title">
-        <h1>Services offered:</h1>
+        <h1>Services offered</h1>
       </div>
       <div class="services-list">
         <div class="service-card">
@@ -143,9 +206,10 @@
     </div>
 
     <!-- Projects -->
-    <div class="projects container">
-      <div class="projects-title">
-        <h1>Recent Projects:</h1>
+    <!-- <div class="projects"> -->
+    <div class="projects-container">
+      <div class="projects-title container">
+        <h1>Recent Projects</h1>
       </div>
       <div class="slider-pagination">
         <span class="left" id="leftArrow">&lt;</span>
@@ -170,13 +234,13 @@
                   alt="Binge Movie Search"
                 />
               </div>
-              <p>
-                Binge is a full stack movie search and save to watch later web
-                app. You can search by movie title or search for specific
-                actors. Whenever you find a movie you're interested in you can
-                click on it to read the plot, see the actors and directors and
-                watch the trailer or save it to check out later!
-              </p>
+              <!-- <p>
+                  Binge is a full stack movie search and save to watch later web
+                  app. You can search by movie title or search for specific
+                  actors. Whenever you find a movie you're interested in you can
+                  click on it to read the plot, see the actors and directors and
+                  watch the trailer or save it to check out later!
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -226,20 +290,20 @@
                 />
               </div>
 
-              <p>
-                Using an API call to
-                <a href="https://openweathermap.org/" target="_blank"
-                  >Open Weather</a
-                >
-                and mix in some wonderfully crafted weather icons from
-                <a
-                  href="https://erikflowers.github.io/weather-icons/"
-                  target="_blank"
-                  >Erik Flowers</a
-                >, React Weather is a beautiful app to grab the weather
-                conditions across the globe. Just enter a city and country and
-                watch as the weather updates below!
-              </p>
+              <!-- <p>
+                  Using an API call to
+                  <a href="https://openweathermap.org/" target="_blank"
+                    >Open Weather</a
+                  >
+                  and mix in some wonderfully crafted weather icons from
+                  <a
+                    href="https://erikflowers.github.io/weather-icons/"
+                    target="_blank"
+                    >Erik Flowers</a
+                  >, React Weather is a beautiful app to grab the weather
+                  conditions across the globe. Just enter a city and country and
+                  watch as the weather updates below!
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -287,14 +351,14 @@
                 />
               </div>
 
-              <p>
-                A full stack app built with React and React-router, Google Book
-                Search is a great app to store any books you love from Google
-                Books! Just search for any book you want, if you find it's
-                something you want to buy just click the view button to launch
-                Google Books. If you love it and want to save it to your
-                collection just click the save button!
-              </p>
+              <!-- <p>
+                  A full stack app built with React and React-router, Google
+                  Book Search is a great app to store any books you love from
+                  Google Books! Just search for any book you want, if you find
+                  it's something you want to buy just click the view button to
+                  launch Google Books. If you love it and want to save it to
+                  your collection just click the save button!
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -345,13 +409,13 @@
                   alt="Star Wars Clicky Game"
                 />
               </div>
-              <p>
-                Test your memory with this Star Wars clicky game! When the page
-                loads, start by clicking any image. Try not to click the same
-                image more than once, the images will randomize after every
-                click. Follow your score in the right corner. Click through all
-                of the images to win.
-              </p>
+              <!-- <p>
+                  Test your memory with this Star Wars clicky game! When the
+                  page loads, start by clicking any image. Try not to click the
+                  same image more than once, the images will randomize after
+                  every click. Follow your score in the right corner. Click
+                  through all of the images to win.
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -395,12 +459,12 @@
               <div class="project-image">
                 <img src="assets/images/techfeed-group.png" alt="Tech Feed" />
               </div>
-              <p>
-                Using Cheerio to scrape from some of the most popular tech
-                blogs, TechFeed grabs the top stories of the day and displays
-                them in one easy location. Any article you find that you like to
-                keep for later just click the "Save Later" button.
-              </p>
+              <!-- <p>
+                  Using Cheerio to scrape from some of the most popular tech
+                  blogs, TechFeed grabs the top stories of the day and displays
+                  them in one easy location. Any article you find that you like
+                  to keep for later just click the "Save Later" button.
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -450,13 +514,13 @@
                   alt="Huddle Football Search"
                 />
               </div>
-              <p>
-                Using APIs from ESPN and Mysportsfeed, Huddle is a fully
-                mobile-responsive app for trending NFL news and player stats
-                with all of the clutter remvoved. Search for up to date player
-                statistics or simply check out the trending top stories around
-                the league.
-              </p>
+              <!-- <p>
+                  Using APIs from ESPN and Mysportsfeed, Huddle is a fully
+                  mobile-responsive app for trending NFL news and player stats
+                  with all of the clutter remvoved. Search for up to date player
+                  statistics or simply check out the trending top stories around
+                  the league.
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -505,11 +569,11 @@
                   alt="Giftastic Gif Search"
                 />
               </div>
-              <p>
-                Giftastic is a mobile-responsive searchable gif app using
-                GIPHY's API. Click the buttons to load top gifs, use the search
-                box to add more buttons of your choice!
-              </p>
+              <!-- <p>
+                  Giftastic is a mobile-responsive searchable gif app using
+                  GIPHY's API. Click the buttons to load top gifs, use the
+                  search box to add more buttons of your choice!
+                </p> -->
             </div>
             <div class="project-details">
               <div class="project-technologies">
@@ -547,11 +611,12 @@
         </div>
       </div>
     </div>
+    <!-- </div> -->
 
     <!-- Companies -->
     <div class="companies-container">
       <div class="companies-title">
-        <h1>Companies I've helped:</h1>
+        <h1>Companies we've helped</h1>
       </div>
       <div class="companies">
         <div class="company">
