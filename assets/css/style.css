@@ -15,9 +15,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   line-height: 1.5;
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../../assets/images/desktop.jpeg); */
-  background: url(../images/desktop.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../../assets/images/desktop3.jpeg);
+  /* background: url(../images/desktop3.jpeg); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
