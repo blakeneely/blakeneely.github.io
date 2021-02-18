@@ -5,26 +5,20 @@
   box-sizing: border-box;
 }
 
-/* html,
+html,
 body {
   height: 100%;
   width: 100%;
-} */
+}
+
+html {
+  background-color: black;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   line-height: 1.5;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../../assets/images/desktop3.jpeg);
-  /* background: url(../images/desktop3.jpeg); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100vw auto;
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
 }
 
 h1,
@@ -201,6 +195,13 @@ iframe {
   height: 100vh;
   width: 100%;
   position: relative;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../../assets/images/desktop3.jpeg);
+  /* background: url(../images/desktop3.jpeg); */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .nav-container {
