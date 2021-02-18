@@ -194,12 +194,12 @@ iframe {
 .header {
   height: 100vh;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url(../../assets/images/desktop3.jpeg);
   /* background: url(../images/desktop3.jpeg); */
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
 }
@@ -540,8 +540,8 @@ nav img {
 
 /* Projects */
 
-.projects {
-  /* background-color: #fafafa; */
+/* .projects {
+  background-color: #fafafa;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../../assets/images/coding1.jpeg);
   background-repeat: no-repeat;
@@ -549,7 +549,7 @@ nav img {
   background-size: cover;
   padding-top: 2em;
   padding-bottom: 2em;
-}
+} */
 
 .projects-container {
   width: 100%;
