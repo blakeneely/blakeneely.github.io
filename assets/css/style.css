@@ -195,11 +195,10 @@ iframe {
   height: 100vh;
   width: 100%;
   /* position: relative; */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../../assets/images/codingdesktop.jpeg);
-  /* background: url(../images/desktop3.jpeg); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(../../assets/images/studio.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
