@@ -16,12 +16,12 @@ body {
   font-weight: 200;
   line-height: 1.5;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../../assets/images/desktop1920.png);
+    url(../../assets/images/desktop3.jpeg);
   /* background: url(../images/desktop3.jpeg); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 100vw auto;
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
