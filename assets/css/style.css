@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
   height: 100%;
   width: 100%;
-}
+} */
 
-html {
+body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   line-height: 1.5;
@@ -21,7 +21,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
