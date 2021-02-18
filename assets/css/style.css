@@ -21,10 +21,10 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
+  background-size: 1920px 1080px;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
 }
 
 h1,
