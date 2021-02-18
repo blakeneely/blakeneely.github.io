@@ -196,7 +196,7 @@ iframe {
   width: 100%;
   /* position: relative; */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-    url(../../assets/images/studio.jpg);
+    url(../../assets/images/desktop.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -751,6 +751,12 @@ nav img {
 }
 
 /* Media Queries for responsiveness */
+@media (hover: none) {
+  .header {
+    background-attachment: initial;
+  }
+}
+
 @media only screen and (max-width: 1035px) {
   .about-image,
   .about-text {
