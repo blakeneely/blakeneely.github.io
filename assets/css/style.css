@@ -71,7 +71,7 @@ li {
 }
 
 .modal-content {
-  margin: auto;
+  margin: 60px auto 0;
   padding-right: 1em;
   animation-name: modalopen;
   animation-duration: 1s;
@@ -79,6 +79,7 @@ li {
 
 iframe {
   margin: auto;
+  height: auto;
   display: block;
 }
 
@@ -97,7 +98,7 @@ iframe {
 }
 
 .contact-modal-content {
-  margin: auto;
+  margin: 60px auto 0;
   padding: 1em;
   display: flex;
   height: 100vh;

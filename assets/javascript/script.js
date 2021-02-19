@@ -2,10 +2,12 @@ $(document).ready(function () {
   const body = document.querySelector('body'),
     // Contact Modal Targets
     contactModal = document.getElementById('contactModal'),
+    contactContent = document.getElementById('contactModalContent'),
     contactModalBtn = document.getElementById('contactLink'),
     contactCloseBtn = document.getElementsByClassName('contactCloseBtn')[0],
     // Resume Modal targets
     modal = document.getElementById('resumeModal'),
+    resumeContent = document.getElementById('resumeModalContent'),
     modalBtn = document.getElementById('resumeLink'),
     closeBtn = document.getElementsByClassName('closeBtn')[0],
     //  Slider targets
@@ -196,7 +198,7 @@ $(document).ready(function () {
 
   // Function to close resume modal with outside click
   function outsideClick(e) {
-    if (e.target == modal) {
+    if (e.target == resumeContent) {
       modal.style.display = 'none';
     }
   }
@@ -214,7 +216,7 @@ $(document).ready(function () {
 
   // Function to close resume modal with outside click
   function outsideContactClick(e) {
-    if (e.target == modal) {
+    if (e.target == contactContent) {
       contactModal.style.display = 'none';
     }
   }
