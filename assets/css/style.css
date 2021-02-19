@@ -77,7 +77,13 @@ li {
   animation-duration: 1s;
 }
 
-iframe {
+.resume {
+  margin-top: 70px;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-content iframe {
   margin: auto;
   height: auto;
   display: block;

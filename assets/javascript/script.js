@@ -217,7 +217,7 @@ $(document).ready(function () {
   // Function to close resume modal with outside click
   function outsideContactClick(e) {
     if (e.target == contactContent) {
-      contactModal.style.display = 'none';
+      console.log(e.taget);
     }
   }
 });
