@@ -25,7 +25,7 @@
       <!-- Navbar -->
       <div class="nav-container">
         <nav>
-          <div class="logo-and-name">
+          <a href="#" class="logo-and-name">
             <div class="logo">
               <img
                 src="assets/images/neelystudiologo.png"
@@ -34,11 +34,33 @@
             </div>
 
             <p><span>Neely</span>Studio</p>
-          </div>
+          </a>
 
-          <div>
-            <a class="resume-link" id="resumeLink">Resume</a>
-            <a id="contactLink">Contact</a>
+          <ul class="links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="assets/images/BlakeNeely-resume.pdf" target="blank"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a id="contactLink">Contact</a>
+            </li>
+          </ul>
+
+          <!-- <div class="burger" id="burger"><i class="fas fa-bars"></i></div> -->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
           </div>
         </nav>
       </div>
@@ -55,7 +77,7 @@
     </div>
     <!-- About -->
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-image">
         <div class="headshot">
           <img src="assets/images/me3.jpg" alt="Blake Neely" />
@@ -80,7 +102,7 @@
 
     <!-- Follow Us -->
 
-    <div class="follow">
+    <div class="follow" id="follow">
       <div class="follow-container">
         <div class="follow-title">
           <h1>Follow us</h1>
@@ -123,7 +145,7 @@
       </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="services-title">
         <h1>Services offered</h1>
       </div>
@@ -177,7 +199,7 @@
 
     <!-- Projects -->
     <!-- <div class="projects"> -->
-    <div class="projects-container">
+    <div class="projects-container" id="projects">
       <div class="projects-title container">
         <h1>Recent Projects</h1>
       </div>
@@ -616,7 +638,7 @@
     </footer> -->
 
     <!-- Resume Modal -->
-    <div class="resume-modal" id="resumeModal">
+    <!-- <div class="resume-modal" id="resumeModal">
       <div class="modal-content" id="resumeModalContent">
         <span class="closeBtn">&times;</span>
         <div class="resume">
@@ -627,7 +649,7 @@
           ></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Contact Modal -->
     <div class="contact-modal" id="contactModal">

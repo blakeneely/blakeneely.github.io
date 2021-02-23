@@ -6,10 +6,10 @@ $(document).ready(function () {
     contactModalBtn = document.getElementById('contactLink'),
     contactCloseBtn = document.getElementsByClassName('contactCloseBtn')[0],
     // Resume Modal targets
-    modal = document.getElementById('resumeModal'),
-    resumeContent = document.getElementById('resumeModalContent'),
-    modalBtn = document.getElementById('resumeLink'),
-    closeBtn = document.getElementsByClassName('closeBtn')[0],
+    // modal = document.getElementById('resumeModal'),
+    // resumeContent = document.getElementById('resumeModalContent'),
+    // modalBtn = document.getElementById('resumeLink'),
+    // closeBtn = document.getElementsByClassName('closeBtn')[0],
     //  Slider targets
     slider = document.querySelector('.projects-slider'),
     slides = Array.from(document.querySelectorAll('.project-slide')),
@@ -167,13 +167,13 @@ $(document).ready(function () {
   }
 
   // Listen for open click for modal
-  modalBtn.addEventListener('click', openModal);
+  // modalBtn.addEventListener('click', openModal);
 
   // Listen for close click for modal
-  closeBtn.addEventListener('click', closeModal);
+  // closeBtn.addEventListener('click', closeModal);
 
   // Listen for outside click for modal
-  window.addEventListener('click', outsideClick);
+  // window.addEventListener('click', outsideClick);
 
   // Listen for open click for contact modal
   contactModalBtn.addEventListener('click', openContactModal);
@@ -185,23 +185,24 @@ $(document).ready(function () {
   window.addEventListener('click', outsideContactClick);
 
   // Function to open resume modal
-  function openModal() {
-    modal.style.display = 'block';
-    body.style.overflow = 'hidden';
-  }
+  // function openModal() {
+  //   modal.style.display = 'block';
+  //   body.style.overflow = 'hidden';
+  // }
 
   // Function to close resume modal
-  function closeModal() {
-    modal.style.display = 'none';
-    body.style.overflow = 'visible';
-  }
+  // function closeModal() {
+  //   modal.style.display = 'none';
+  //   body.style.overflow = 'visible';
+  // }
 
   // Function to close resume modal with outside click
-  function outsideClick(e) {
-    if (e.target == resumeContent) {
-      modal.style.display = 'none';
-    }
-  }
+  // function outsideClick(e) {
+  //   if (e.target == resumeContent) {
+  //     modal.style.display = 'none';
+  //   }
+  // }
+
   // Function to open Contact Modal
   function openContactModal() {
     contactModal.style.display = 'block';
@@ -220,4 +221,32 @@ $(document).ready(function () {
       console.log(e.taget);
     }
   }
+
+  // Event listener and function for respoinsve navbar
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.links');
+    const navLinks = document.querySelectorAll('.links li');
+
+    // Toggle Nav
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+
+      // Toggle Links
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.4
+          }s`;
+        }
+      });
+
+      // Burger Animation
+      burger.classList.toggle('toggle');
+    });
+  };
+
+  navSlide();
 });
