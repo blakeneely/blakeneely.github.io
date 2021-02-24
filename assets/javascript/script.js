@@ -243,6 +243,8 @@ $(document).ready(function () {
         }
       });
 
+      // Close slider when link is clicked
+
       // Burger Animation
       burger.classList.toggle('toggle');
     });
