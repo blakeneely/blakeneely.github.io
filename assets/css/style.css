@@ -104,7 +104,7 @@ li {
 }
 
 .contact-modal-content {
-  margin: 60px auto 0;
+  /* margin: 60px auto 0; */
   padding: 1em;
   display: flex;
   height: 100vh;
@@ -861,6 +861,12 @@ nav a:active {
   .follow-icon {
     height: 70px;
     width: 70px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .contact-modal-content {
+    margin: 60px auto 0;
   }
 }
 

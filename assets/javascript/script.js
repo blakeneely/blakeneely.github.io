@@ -228,7 +228,7 @@ $(document).ready(function () {
     const nav = document.querySelector('.links');
     const navLinks = document.querySelectorAll('.links li');
 
-    // Toggle Nav
+    // Toggle Nav on burger click
     burger.addEventListener('click', () => {
       nav.classList.toggle('nav-active');
 
@@ -242,11 +242,31 @@ $(document).ready(function () {
           }s`;
         }
       });
-
-      // Close slider when link is clicked
-
-      // Burger Animation
+      // Toggle burger Animation
       burger.classList.toggle('toggle');
+    });
+
+    // Close slider when link is clicked
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (link.style.animation) {
+          nav.classList.toggle('nav-active');
+
+          // Toggle Links
+          navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = '';
+            } else {
+              link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.4
+              }s`;
+            }
+          });
+
+          // Toggle burger animation
+          burger.classList.toggle('toggle');
+        }
+      });
     });
   };
 
